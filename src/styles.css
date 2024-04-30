@@ -40,6 +40,12 @@ body{
 
 }
 
+label {
+
+    color: #0f0;
+
+}
+
 #blank {
 
     background-color:#222;

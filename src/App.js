@@ -59,12 +59,13 @@ function App() {
           >{item}</p>
           ))}
         </div>
-      <label
-      htmlFor="blank"
-      onDragOver = {onDragOver}
-      onDrop = {onDrop}
-      value = {answer}
-      >
+        <label
+  htmlFor="blank"
+  onDragOver={onDragOver}
+  onDrop={onDrop}
+  value={answer}
+  style={{ color: 'green' }}
+>
         <input id="blank" type="text" />
         It Stands For Hypertext Markup Language
       </label>
