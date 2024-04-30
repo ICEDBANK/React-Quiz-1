@@ -58,12 +58,16 @@ function App() {
           >{item}</p>
           ))}
         </div>
-      <label htmlFor="blank">
+      <label
+      htmlFor="blank"
+      ondragover = {ondragover}
+      onDrop = {onDrop}
+      >
         <input id="blank" type="text" />
         It Stands For Hypertext Markup Language
       </label>
-      <button id="checkAnswer">Check Answer</button>
-      <div id="answerMessage">The answer is ...</div>
+      <button id="checkAnswer" onClick={checkAnswer}>Check Answer</button>
+      <div id="answerMessage" style={({display:message.text ? 'block' : 'none', color: message.color})}>{message}</div>
       </div>
     </>
   );
