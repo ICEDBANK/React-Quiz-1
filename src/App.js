@@ -24,13 +24,13 @@ function App() {
 
   };
 
-  const ondragstart = (e, value) => {
+  const onDragStart = (e, value) => {
 
     e.dataTransfer.setData('text/plain', value);
 
   };
 
-  ondragover = (e) => {
+  const onDragOver = (e) => {
 
     e.preventDefault();
 
@@ -49,18 +49,19 @@ function App() {
 
       <h1>Welcome</h1>
       <div className="container">
-        <div id="answerPool">
+        <div id="answerPool" >
           {draggables.map((item, index) => (
-          <p 
+          <p
+            key={index}
             className='draggable'
             draggable = "true"
-            ondragstart={(event) => ondragstart(event, item)}
+            onDragStart={(event) => onDragStart(event, item)}
           >{item}</p>
           ))}
         </div>
       <label
       htmlFor="blank"
-      ondragover = {ondragover}
+      onDragOver = {onDragOver}
       onDrop = {onDrop}
       >
         <input id="blank" type="text" />
