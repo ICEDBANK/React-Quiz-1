@@ -67,7 +67,7 @@ function App() {
         It Stands For Hypertext Markup Language
       </label>
       <button id="checkAnswer" onClick={checkAnswer}>Check Answer</button>
-      <div id="answerMessage" style={({display:message.text ? 'block' : 'none', color: message.color})}>{message}</div>
+      <div id="answerMessage" style={{ display: message.text ? 'block' : 'none', color: message.color }}>{message.text}</div>
       </div>
     </>
   );
