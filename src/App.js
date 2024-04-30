@@ -50,7 +50,6 @@ function App() {
           ))}
         </div>
         <label htmlFor="blank">
-          It Stands For Hypertext Markup Language
           <input
             id="blank"
             type="text"
@@ -58,7 +57,7 @@ function App() {
             onChange={handleInputChange}
             onDragOver={onDragOver}
             onDrop={onDrop}
-          />
+          />It Stands For Hypertext Markup Language
         </label>
         <button id="checkAnswer" onClick={checkAnswer}>
           Check Answer
