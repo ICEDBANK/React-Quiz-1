@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <h1>Welcome</h1>
+      <div className="container">
+        <div id="answerPool">
+          <p>PHP</p>
+          <p>C++</p>
+          <p>HTML</p>
+          <p>React</p>
+          <p>JavaScript</p>
+        </div>
+      <label htmlFor="blank">
+        <input id="blank" type="text" />
+        It Stands For Hypertext Markup Language
+      </label>
+      <button id="checkAnswer">Check Answer</button>
+      <div id="answerMessage">The answer is ...</div>
+      </div>
+    </>
   );
 }
 
