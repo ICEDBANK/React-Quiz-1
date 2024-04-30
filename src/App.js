@@ -63,6 +63,7 @@ function App() {
       htmlFor="blank"
       onDragOver = {onDragOver}
       onDrop = {onDrop}
+      value = {answer}
       >
         <input id="blank" type="text" />
         It Stands For Hypertext Markup Language
