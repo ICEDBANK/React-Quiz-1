@@ -47,8 +47,7 @@ label {
 }
 
 #blank {
-
-    background-color:#222;
+    background-color: #222;
     border: none;
     border-bottom: 1px solid #0f0;
     color: #0f0;
@@ -56,7 +55,7 @@ label {
     text-align: center;
     padding: 10px;
     margin-right: 10px;
-
+    width: 80%; /* Adjust width to fit the container */
 }
 
 button {

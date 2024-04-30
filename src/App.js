@@ -60,12 +60,11 @@ function App() {
           ))}
         </div>
         <label
-  htmlFor="blank"
-  onDragOver={onDragOver}
-  onDrop={onDrop}
-  value={answer}
-  style={{ color: 'green' }}
->
+        htmlFor="blank"
+        onDragOver = {onDragOver}
+        onDrop = {onDrop}
+        value = {answer}
+        >
         <input id="blank" type="text" />
         It Stands For Hypertext Markup Language
       </label>
