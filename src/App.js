@@ -64,7 +64,6 @@ function App() {
         onDragOver = {onDragOver}
         onDrop = {onDrop}
         value = {answer}
-        style={{ color: 'green !important' }}
         >
         <input id="blank" type="text" />
         It Stands For Hypertext Markup Language
